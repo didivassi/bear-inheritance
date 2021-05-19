@@ -27,10 +27,7 @@ public class Bear {
     }
 
     protected boolean hasBattery(){
-        if(batteryLevel>0){
-            return true;
-        }
-        return false;
+        return batteryLevel>0;
     }
 
     public String getType() {//not used
