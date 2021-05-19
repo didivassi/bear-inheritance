@@ -9,7 +9,6 @@ public class CrankyBear extends Bear {
     public CrankyBear(){
         super("Cranky");
         hasSung=false;
-
     }
 
     @Override
@@ -26,10 +25,7 @@ public class CrankyBear extends Bear {
     }
 
     @Override
-    protected boolean  hasBattery(){
-        if(super.batteryLevel>0.5){
-            return true;
-        }
-        return false;
+    protected boolean hasBattery(){
+        return super.batteryLevel > 0.5;
     }
 }
