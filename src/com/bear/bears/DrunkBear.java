@@ -3,7 +3,7 @@ package com.bear.bears;
 //se adormeceu metodo publico recharge
 public class DrunkBear extends Bear {
 
-    private float sleepProbability;
+    private final float sleepProbability;
     private boolean hasSlept;
 
     public DrunkBear(){

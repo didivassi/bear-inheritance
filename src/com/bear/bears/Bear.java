@@ -2,9 +2,9 @@ package com.bear.bears;
 
 public class Bear {
     protected float batteryLevel;
-    protected String type;
-    float wornForTalking=0.1f;
-    boolean isWornOut;
+    protected final String type;
+    final float wornForTalking=0.1f;
+    final boolean isWornOut;
 
     public Bear(String type){
         batteryLevel=1;

@@ -7,7 +7,7 @@ import com.bear.bears.SimpleBear;
 
 public class Shop {
     private int producedBears;
-    private String name;
+    private final String name;
 
     public Shop(String name){
         this.name=name;
@@ -28,7 +28,7 @@ public class Shop {
 
     public void produceAndTestBatch(int batch){
 
-        Bear bearsShop[]=new Bear[batch];
+        Bear[] bearsShop =new Bear[batch];
         System.out.println("Producing and testing at shop: " + this.name);
         for (int i = 0; i <batch; i++) {
             bearsShop[i]= this.createBear();
