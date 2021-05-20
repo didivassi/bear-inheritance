@@ -36,7 +36,7 @@ public class Shop {
 
             for (int j = 0; j <= 11; j++) {
                 bearsShop[i].talk();
-                if(bearsShop[i].getType().equals("I'm a Drunk Bear")){
+                if(bearsShop[i] instanceof DrunkBear){
                     ((DrunkBear) bearsShop[i]).rechargeBattery();
                 }
 
@@ -49,10 +49,9 @@ public class Shop {
         if(producedBears==shop.producedBears){
             return null;
         }
-        if (producedBears > shop.producedBears){
-            return this;
-        }
-        return shop;
+
+        return producedBears > shop.producedBears? this:shop;
+
     }
 
 
